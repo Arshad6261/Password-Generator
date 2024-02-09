@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./lock-xxl.png" type="image/x-icon">
+</head>
+<body>
+<body class="flex justify-center items-center h-screen bg-violet-950">
+    <div class="border-solid  border-y-gray-600 border w-[90%] md:w-1/2 h-3/4 text-white flex flex-col items-center space-y-6">
+        <!-- Heading -->
+        <h1 class="md:text-4xl text-2xl mt-10">Password Generator</h1>
+        <h3 class="bg-white text-gray-500 md:px-[20%] md:py-[1%] rounded-md shadow-sm shadow-white " id="showPassword">click on Generate button</h3>
+
+        <!-- Buttons -->
+        <div class="flex justify-center items-center w-1/2 pt-8 md:justify-evenly md:w-full flex-col md:flex-row space-y-4">
+            <button class="md:px-[6%] md:py-[1%] bg-violet-400 font-bold rounded-md hover:cursor-pointer" onclick="generatePassword()">Generate</button>
+            <button class="md:px-[6%] md:py-[1%] bg-violet-400 font-bold rounded-md hover:cursor-pointer" onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
+
+        <!-- Checkbox for required Password -->
+        <div class="text-2xl md:text-xl flex flex-col md:items-stretch items-center justify-center h-[40%] pt-10 w-full space-y-4">
+            <div >
+                <h3 class="md:ml-[15%]">Password Length <input type="number" id="pl" class="w-16 h-8 bg-transparent border-gray-500 border-solid rounded-md border-2 text-white md:ml-[35%]"></h3>
+            </div>
+            <div>
+                <h3 class="md:ml-[15%]">Include uppercase letters <input id="uc" type="checkbox"  class="md:ml-[25%]"></h3> 
+            </div>
+            <div>
+                <h3 class="md:ml-[15%]">Include lowercase letters <input id="lc" type="checkbox" class="md:ml-[25.5%]"></h3> 
+            </div>
+            <div>
+                <h3 class="md:ml-[15%]">Include Numbers <input type="checkbox" id="num" class="md:ml-[35.8%]"></h3> 
+            </div>
+            <div>
+                <h3 class="md:ml-[15%]">Include symbols <input type="checkbox" id="sym" class="md:ml-[37%]"></h3> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
