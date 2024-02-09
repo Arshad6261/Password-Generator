@@ -24,7 +24,7 @@ function generatePassword(){
     function generateRandomNum(){
         return Math.floor(Math.random() * finalArray.length)
     }
-    if(passLength<=4) alert("Please enter password length more than 4 ")
+    if(passLength<4 && passLength>20) alert("Please enter password length between 4 to 20 ")
     else{
       let password = ""
       for(let i=0;i<passLength;i++){
