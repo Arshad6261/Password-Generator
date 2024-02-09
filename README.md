@@ -11,7 +11,7 @@ A simple web-based tool to generate secure passwords with customizable options.
 
 ## Demo
 
-[Link to live demo](https://www.arshad6261.github.io/Password-Generator) 
+[Link to live demo](https://arshad6261.github.io/Password-Generator/) 
 
 ## Usage
 
